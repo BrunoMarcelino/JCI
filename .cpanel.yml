@@ -1,0 +1,18 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/jcitolia/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R css $DEPLOYPATH
+    - /bin/cp -R img $DEPLOYPATH
+    - /bin/cp -R js $DEPLOYPATH
+    - /bin/cp -R lib $DEPLOYPATH
+    - /bin/cp -R scss $DEPLOYPATH
+    - /bin/cp 404.html $DEPLOYPATH
+    - /bin/cp Newsletter.html $DEPLOYPATH
+    - /bin/cp contact.html $DEPLOYPATH
+    - /bin/cp projet.html $DEPLOYPATH
+    - /bin/cp service.html $DEPLOYPATH
+    - /bin/cp team.html $DEPLOYPATH
+    - /bin/cp Témoignage.html $DEPLOYPATH
+    - /bin/cp READ-ME.txt $DEPLOYPATH
