@@ -30,6 +30,24 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!--css interne-->
+    <style>
+        p {
+             width: 250px; /* Largeur du conteneur */
+             white-space: nowrap; /* Empêche le texte de passer à la ligne */
+             overflow: hidden; /* Cache le texte dépassant de la largeur */
+             text-overflow: ellipsis; /* Utilise '...' pour indiquer du texte masqué */
+             }
+ 
+             /* Lorsque le curseur survole le paragraphe, annule la règle 'overflow' */
+             p:hover {
+             overflow: visible;
+             white-space: normal;
+                 }
+  </style>
+
+
 </head>
 
 <body>
@@ -53,7 +71,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="collapse navbar-collapse" id="navbarCollapse" >
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Accueil</a>
                         <a href="Newsletter.html" class="nav-item nav-link">Newsletter</a>
@@ -73,7 +91,7 @@
                 </div>
             </nav>
 
-            <div class="container-xxl bg-primary hero-header">
+            <div class="container-xxl bg-primary hero-header" style="padding: 100px 0;"</div> >
                 <div class="container px-lg-5">
                     <div class="row g-5 align-items-end">
                         <div class="col-lg-6 text-center text-lg-start">
@@ -98,23 +116,27 @@
                 <div class="row g-4">
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="feature-item bg-light rounded text-center p-4">
-                            <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
-                            <h5 class="mb-3">Digital Marketing</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <i class="fa fa-users fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">QUI SOMMES-NOUS</h5>
+                            <p class="m-0">La JCI est une organisation créée pour les jeunes leaders entreprenants agés des 18 à 40 ans.Elle est spécialisée
+                                dans le développement professionnel, les opportiunités économiques et les solutions créatives aux problèmes de tous niveaux et 
+                                dans tous les domaines de la société.  
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="feature-item bg-light rounded text-center p-4">
-                            <i class="fa fa-3x fa-search text-primary mb-4"></i>
-                            <h5 class="mb-3">SEO & Backlinks</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <i class="fas fa-eye fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">NOTRE VISION </h5>
+                            <p class="m-0">Etre le principal reséau mondial de jeunes leaders
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="feature-item bg-light rounded text-center p-4">
-                            <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
-                            <h5 class="mb-3">Design & Development</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
+                            <i class="fas fa-rocket fa-3x text-primary mb-4"></i>
+                            <h5 class="mb-3">NOTRE MISSION </h5>
+                            <p class="m-0">Offrir aux jeunes des opportunités de développement du leadership en leur donnant la capacité de créer des changements positifs</p>
                         </div>
                     </div>
                 </div>
@@ -128,7 +150,7 @@
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <p class="section-title text-secondary">Newsletter Us<span></span></p>
+                        <p class="section-title text-secondary">Projet termine<span></span></p>
                         <h1 class="mb-5">#1 Digital solution with 10 years of experience</h1>
                         <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
                         <div class="skill mb-4">
@@ -142,7 +164,7 @@
                         </div>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">SEO & Backlinks</p>
+                                <p class="mb-2">Formation</p>
                                 <p class="mb-2">90%</p>
                             </div>
                             <div class="progress">
@@ -151,8 +173,8 @@
                         </div>
                         <div class="skill mb-4">
                             <div class="d-flex justify-content-between">
-                                <p class="mb-2">Design & Development</p>
-                                <p class="mb-2">95%</p>
+                                <p class="mb-2">Visite officielle</p>
+                                <p class="mb-2">90%</p>
                             </div>
                             <div class="progress">
                                 <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
@@ -161,7 +183,7 @@
                         <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">En savoir plus</a>
                     </div>
                     <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/Newsletter.png">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
                     </div>
                 </div>
             </div>
@@ -204,7 +226,7 @@
             <div class="container py-5 px-lg-5">
                 <div class="wow fadeInUp" data-wow-delay="0.1s">
                     <p class="section-title text-secondary justify-content-center"><span></span>NOS SERVICES<span></span></p>
-                    <h1 class="text-center mb-5">Quelles solutions nous offrons</h1>
+                    <h1 class="text-center mb-5">Voici Nos Services</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -257,16 +279,6 @@
                             <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item d-flex flex-column text-center rounded">
-                            <div class="service-icon flex-shrink-0">
-                                <i class="fab fa-android fa-2x"></i>
-                            </div>
-                            <h5 class="mb-3">App Development</h5>
-                            <p class="m-0">Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet lorem.</p>
-                            <a class="btn btn-square" href=""><i class="fa fa-arrow-right"></i></a>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
@@ -312,15 +324,15 @@
                     <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.1s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/formt avec coach.PNG" alt="">
+                                <img class="img-fluid w-100" src="img/day-6.PNG" alt="">
                                 <div class="portfolio-overlay">
-                                    <a class="btn btn-square btn-outline-light mx-1" href="img/formt avec coach.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/day-6.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">MAY 2023</p>
-                                <h5 class="lh-base mb-0">Formation avec leurs coachs distincts</a>
+                                <h5 class="lh-base mb-0"><p>Formation avec leurs coachs distincts</p></a>
                             </div>
                         </div>
                     </div>
@@ -335,22 +347,22 @@
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">Week-end</p>
-                                <h5 class="lh-base mb-0">Première journée de startup</a>
+                                <h5 class="lh-base mb-0"><p>Première journée de startup</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.5s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/visite officiel.PNG" alt="">
+                                <img class="img-fluid w-100" src="img/day-4.PNG" alt="">
                                 <div class="portfolio-overlay">
-                                    <a class="btn btn-square btn-outline-light mx-1" href="img/visite officiel.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/day-4.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">Samedi 18 mars 2023</p>
-                                <h5 class="lh-base mb-0">le Vice-Président International de la JCI Ibraheem TIAMIYU fait une visite à Madagascar</a>
+                                <h5 class="lh-base mb-0"><p>le Vice-Président International de la JCI Ibraheem TIAMIYU fait une visite à Madagascar</p></a>
                             </div>
                         </div>
                     </div>
@@ -365,22 +377,22 @@
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">Week-end</p>
-                                <h5 class="lh-base mb-0">Deuxième journée de startup</a>
+                                <h5 class="lh-base mb-0"><p>Deuxième journée de startup</p></a>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp" data-wow-delay="0.3s">
                         <div class="rounded overflow-hidden">
                             <div class="position-relative overflow-hidden">
-                                <img class="img-fluid w-100" src="img/formatio init.PNG" alt="">
+                                <img class="img-fluid w-100" src="img/day-5.PNG" alt="">
                                 <div class="portfolio-overlay">
-                                    <a class="btn btn-square btn-outline-light mx-1" href="img/formatio init.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                                    <a class="btn btn-square btn-outline-light mx-1" href="img/day-5.PNG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                                     <a class="btn btn-square btn-outline-light mx-1" href=""><i class="fa fa-link"></i></a>
                                 </div>
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">04 mars 2023</p>
-                                <h5 class="lh-base mb-0">La formation initiée et organisée par la JCI Toliara en partenariat avec RAIKY "</a>
+                                <h5 class="lh-base mb-0"><p>La formation initiée et organisée par la JCI Toliara en partenariat avec RAIKY</p></a>
                             </div>
                         </div>
                     </div>
@@ -395,7 +407,7 @@
                             </div>
                             <div class="bg-light p-4">
                                 <p class="text-primary fw-medium mb-2">Week-end</p>
-                                <h5 class="lh-base mb-0">Troisième journéé de startup</a>
+                                <h5 class="lh-base mb-0"><p>Troisième journéé de startup</p></a>
                             </div>
                         </div>
                     </div>
@@ -414,30 +426,30 @@
                     <div class="Témoignage-item bg-light rounded my-4">
                         <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Mon expérience à la JCI Toliara m'a appris à développer mes compétences en leadership tout en contribuant positivement au développement de ma communauté.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Témoignage-1.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/name client.PNG" style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
-                            </div>
+                                <h5 class="mb-1">MAMONJY Tefinjanahary Marc Gaël</h5>
+                                <span>Obsérvateur</span>
+                            </div> 
                         </div>
                     </div>
                     <div class="Témoignage-item bg-light rounded my-4">
                         <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Grâce à mon implication à la JCI Toliara, j'ai découvert le pouvoir de l'action collective pour créer des changements significatifs dans ma ville.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Témoignage-2.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/clien.png" style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">Bruno RATOVOARISON</h5>
+                                <span>Obsérvateur</span>
                             </div>
                         </div>
                     </div>
                     <div class="Témoignage-item bg-light rounded my-4">
                         <p class="fs-5"><i class="fa fa-quote-left fa-4x text-primary mt-n4 me-3"></i>Mon passage à la JCI Toliara m'a enseigné l'importance de l'engagement citoyen et de la collaboration pour construire un avenir meilleur.</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/Témoignage-3.jpg" style="width: 65px; height: 65px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="img/cli.PNG" style="width: 65px; height: 65px;">
                             <div class="ps-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <span>Profession</span>
+                                <h5 class="mb-1">HERINANDRASANA Sarah Esperence</h5>
+                                <span>Obsérvateur</span>
                             </div>
                         </div>
                     </div>
@@ -558,7 +570,7 @@
                             <div class="text-center border-bottom p-4">
                                 <img class="img-fluid rounded-circle mb-4" src="img/sarah.png" alt="">
                                 <h5>HERINANDRASANA Sarah Esperence </h5>
-                                <span>Directrice des Relations Publiques</span>
+                                <span>Directrice des Relations Publiques <br> JCI Toliara</span>
                             </div>
                             <div class="d-flex justify-content-center p-4">
                                 <a class="btn btn-square mx-1" href="https://www.facebook.com/profile.php?id=100078413679973"><i class="fab fa-facebook-f"></i></a>
@@ -569,9 +581,9 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item bg-light rounded">
                             <div class="text-center border-bottom p-4">
-                                <img class="img-fluid rounded-circle mb-4" src="img/bruno.png" alt="">
+                                <img class="img-fluid rounded-circle mb-4" src="img/bruno.jpg" alt="">
                                 <h5>Bruno RATOVOARISON</h5>
-                                <span>Directeur Numérique Local</span>
+                                <span>Directeur Numérique <br> Local <br> JCI Toliara</span>
                             </div>
                             <div class="d-flex justify-content-center p-4">
                                 <a class="btn btn-square mx-1" href="https://www.facebook.com/dano.plack.3"><i class="fab fa-facebook-f"></i></a>
@@ -609,13 +621,13 @@
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Address<span></span></p>
                         <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <p><i class="fa fa-phone-alt me-3"></i>032 50 527 73</p>
+                        <p><i class="fa fa-envelope me-3"></i>sgltoliara@jcimada.org</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/jci.toliara"><i class="fab fa-facebook-f"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/company/jci-toliara/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
@@ -630,22 +642,22 @@
                         <p class="section-title text-white h5 mb-4">Gallery<span></span></p>
                         <div class="row g-2">
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-1.jpg" alt="Image">
+                                <img class="img-fluid" src="img/fouteur1.PNG" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-2.jpg" alt="Image">
+                                <img class="img-fluid" src="img/fouteur2.PNG" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-3.jpg" alt="Image">
+                                <img class="img-fluid" src="img/fouteur3.PNG" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-4.jpg" alt="Image">
+                                <img class="img-fluid" src="img/fouteur4.PNG" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-5.jpg" alt="Image">
+                                <img class="img-fluid" src="img/fouteur5.PNG" alt="Image">
                             </div>
                             <div class="col-4">
-                                <img class="img-fluid" src="img/portfolio-6.jpg" alt="Image">
+                                <img class="img-fluid" src="img/fouteur6.PNG" alt="Image">
                             </div>
                         </div>
                     </div>
