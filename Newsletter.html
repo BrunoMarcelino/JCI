@@ -30,6 +30,51 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .photo-card {
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .photo-card:hover {
+        transform: scale(1.1);
+    }
+
+    .photo-card img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* CSS pour afficher en plein écran */
+    .fullscreen-photo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .fullscreen-photo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+    .close-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    </style>
 </head>
 
 <body>
@@ -47,7 +92,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">JCI Toliara</h1>
+                    <h1 class="m-0">JCI<span style="color: #edbd27;">&nbsp;Toliara</span></h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -56,9 +101,9 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav mx-auto py-0">
                         <a href="index.html" class="nav-item nav-link">Accueil</a>
-                        <a href="Newsletter.html" class="nav-item nav-link active">Newsletter</a>
+                        <a href="Newsletter.html" class="nav-item nav-link">Newsletter</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="project.html" class="nav-item nav-link">Project</a>
+                        <a href="project.html" class="nav-item nav-link active">Project</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
@@ -72,7 +117,6 @@
                     <a href="" class="btn rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Devenir Membre</a>
                 </div>
             </nav>
-
             <div class="container-xxl py-5 bg-primary hero-header">
                 <div class="container my-5 py-5 px-lg-5">
                     <div class="row g-5 py-5">
@@ -94,50 +138,85 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Newsletter Start -->
-        <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <p class="section-title text-secondary">Newsletter Us<span></span></p>
-                        <h1 class="mb-5">#1 Digital solution with 10 years of experience</h1>
-                        <p class="mb-4">Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet</p>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">Digital Marketing</p>
-                                <p class="mb-2">85%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">SEO & Backlinks</p>
-                                <p class="mb-2">90%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-secondary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="skill mb-4">
-                            <div class="d-flex justify-content-between">
-                                <p class="mb-2">Design & Development</p>
-                                <p class="mb-2">95%</p>
-                            </div>
-                            <div class="progress">
-                                <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <a href="" class="btn btn-primary py-sm-3 px-sm-5 rounded-pill mt-3">En savoir plus</a>
+       <!-- Newsletter Start -->
+       <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.1s" src="img/news1.jpg" alt="Photo 1">
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/about.png">
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.3s" src="img/news2.jpg" alt="Photo 2">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/news4.jpg" alt="Photo 3">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.7s" src="img/news9.jpg" alt="Photo 4">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.9s" src="img/news13.jpg" alt="Photo 5">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.1s" src="img/news10jpg.jpg" alt="Photo 1">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.3s" src="img/news3.jpg" alt="Photo 2">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.5s" src="img/news5.jpg" alt="Photo 3">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.7s" src="img/news6.jpg" alt="Photo 4">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.9s" src="img/news7.jpg" alt="Photo 5">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.7s" src="img/news8.jpg" alt="Photo 4">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.9s" src="img/news12.jpg" alt="Photo 5">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.7s" src="img/news11.jpg" alt="Photo 4">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="photo-card">
+                        <img class="img-fluid wow zoomIn" data-wow-delay="0.9s" src="img/news14.jpg" alt="Photo 5">
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Newsletter End -->
+        </div>
+       <!-- Newsletter End -->
+
         
         
 
@@ -147,7 +226,7 @@
                 <div class="row g-5">
                     <div class="col-md-6 col-lg-3">
                         <p class="section-title text-white h5 mb-4">Address<span></span></p>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-map-marker-alt me-3"></i>Chambre de commerce et l'industrie Tuléar, Tsimenatse 1, Boulevard Monja Jaona</p>
                         <p><i class="fa fa-phone-alt me-3"></i>032 50 527 73</p>
                         <p><i class="fa fa-envelope me-3"></i>sgltoliara@jcimada.org</p>
                         <div class="d-flex pt-2">
